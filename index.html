@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Zen - 2D Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <div class="ui-layer">
+            <div class="score-board">
+                <span class="label">PETALS</span>
+                <span class="value" id="score">0</span>
+            </div>
+
+            <div class="health-board">
+                <span class="label">LIVES</span>
+                <span class="value" id="lives">❤❤❤</span>
+            </div>
+        </div>
+
+        <div class="game-over-screen hidden" id="game-over-screen">
+            <h1>終 (The End)</h1>
+            <p>You collected <span id="final-score">0</span> petals.</p>
+            <button id="restart-btn" class="btn">TRY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
